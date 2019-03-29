@@ -1,0 +1,9 @@
+[submodule "rocket-chip"]
+	path = rocket-chip
+	url = https://github.com/darwinbeing/rocket-chip.git
+[submodule "sifive-blocks"]
+	path = sifive-blocks
+	url = https://github.com/darwinbeing/sifive-blocks.git
+[submodule "fpga-shells"]
+	path = fpga-shells
+	url = https://github.com/darwinbeing/fpga-shells.git
