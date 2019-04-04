@@ -1,5 +1,5 @@
 // See LICENSE for license details.
-package sifive.freedom.everywhere.e200hbirdkit
+package sifive.freedom.everywhere.e300hbirdkit
 
 import Chisel._
 
@@ -18,10 +18,10 @@ import sifive.blocks.devices.uart._
 import sifive.blocks.devices.i2c._
 
 //-------------------------------------------------------------------------
-// E200HBirdKitSystem
+// E300HBirdKitSystem
 //-------------------------------------------------------------------------
 
-class E200HBirdKitSystem(implicit p: Parameters) extends RocketSubsystem
+class E300HBirdKitSystem(implicit p: Parameters) extends RocketSubsystem
     with HasPeripheryMaskROMSlave
     with HasPeripheryDebug
     with HasPeripheryMockAON
@@ -31,10 +31,10 @@ class E200HBirdKitSystem(implicit p: Parameters) extends RocketSubsystem
     with HasPeripheryGPIO
     with HasPeripheryPWM
     with HasPeripheryI2C {
-  override lazy val module = new E200HBirdKitSystemModule(this)
+  override lazy val module = new E300HBirdKitSystemModule(this)
 }
 
-class E200HBirdKitSystemModule[+L <: E200HBirdKitSystem](_outer: L)
+class E300HBirdKitSystemModule[+L <: E300HBirdKitSystem](_outer: L)
   extends RocketSubsystemModuleImp(_outer)
     with HasPeripheryDebugModuleImp
     with HasPeripheryUARTModuleImp

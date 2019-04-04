@@ -1,5 +1,5 @@
 // See LICENSE for license details.
-package sifive.freedom.everywhere.e200hbirdkit
+package sifive.freedom.everywhere.e300hbirdkit
 
 import Chisel._
 
@@ -32,10 +32,10 @@ object PinGen {
 }
 
 //-------------------------------------------------------------------------
-// E200HBirdKitPlatformIO
+// E300HBirdKitPlatformIO
 //-------------------------------------------------------------------------
 
-class E200HBirdKitPlatformIO(implicit val p: Parameters) extends Bundle {
+class E300HBirdKitPlatformIO(implicit val p: Parameters) extends Bundle {
   val pins = new Bundle {
     val jtag = new JTAGPins(() => PinGen(), false)
     val gpio = new GPIOPins(() => PinGen(), p(PeripheryGPIOKey)(0))
@@ -47,12 +47,12 @@ class E200HBirdKitPlatformIO(implicit val p: Parameters) extends Bundle {
 }
 
 //-------------------------------------------------------------------------
-// E200HBirdKitPlatform
+// E300HBirdKitPlatform
 //-------------------------------------------------------------------------
 
-class E200HBirdKitPlatform(implicit val p: Parameters) extends Module {
-  val sys = Module(LazyModule(new E200HBirdKitSystem).module)
-  val io = new E200HBirdKitPlatformIO
+class E300HBirdKitPlatform(implicit val p: Parameters) extends Module {
+  val sys = Module(LazyModule(new E300HBirdKitSystem).module)
+  val io = new E300HBirdKitPlatformIO
 
   // This needs to be de-asserted synchronously to the coreClk.
   val async_corerst = sys.aon.rsts.corerst

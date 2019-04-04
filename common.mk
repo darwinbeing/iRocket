@@ -104,6 +104,23 @@ $(prjx): $(verilog)
 .PHONY: prjx
 prjx: $(prjx)
 
+TB_SRCS = $(base_dir)/testbench/fpga_tb_top.v \
+	  $(base_dir)/testbench/clkdivider.v
+sim: $(romgen)
+	echo $(VSRCS) > $(f)
+	echo $(TB_SRCS) >> $(f)
+
+	cd $(BUILD_DIR); vivado \
+		-nojournal -mode batch \
+		-source $(fpga_common_script_dir)/vivado_sim.tcl \
+		-tclargs \
+		-top-module "$(MODEL)" \
+		-F "$(f)" \
+		-ip-vivado-tcls "$(shell find '$(BUILD_DIR)' -name '*.vivado.tcl')" \
+		-board "$(BOARD)"
+
+.PHONY: sim
+
 # Clean
 .PHONY: clean
 clean:

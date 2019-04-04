@@ -1,11 +1,11 @@
 # See LICENSE for license details.
 base_dir := $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
-BUILD_DIR := $(base_dir)/builds/e200hbirdkit
+BUILD_DIR := $(base_dir)/builds/e300hbirdkit
 FPGA_DIR := $(base_dir)/fpga-shells/xilinx
-MODEL := E200HBirdKitFPGAChip
-PROJECT := sifive.freedom.everywhere.e200hbirdkit
-export CONFIG_PROJECT := sifive.freedom.everywhere.e200hbirdkit
-export CONFIG := E200HBirdKitConfig
+MODEL := E300HBirdKitFPGAChip
+PROJECT := sifive.freedom.everywhere.e300hbirdkit
+export CONFIG_PROJECT := sifive.freedom.everywhere.e300hbirdkit
+export CONFIG := E300HBirdKitConfig
 export BOARD := hbird
 export BOOTROM_DIR := $(base_dir)/bootrom/xip
 
