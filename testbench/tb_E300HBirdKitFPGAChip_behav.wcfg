@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_E300HBirdKitFPGAChip_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_E300HBirdKitFPGAChip" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="44378837000fs"></ZoomStartTime>
+      <ZoomEndTime time="44528837001fs"></ZoomEndTime>
+      <Cursor1Time time="44403837000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="246"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="72" />
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/CLK100MHZ">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/CLK32768KHZ">
+      <obj_property name="ElementShortName">CLK32768KHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK32768KHZ</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/fpga_rst">
+      <obj_property name="ElementShortName">fpga_rst</obj_property>
+      <obj_property name="ObjectShortName">fpga_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/mcu_rst">
+      <obj_property name="ElementShortName">mcu_rst</obj_property>
+      <obj_property name="ObjectShortName">mcu_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/resetn">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/led_0">
+      <obj_property name="ElementShortName">led_0</obj_property>
+      <obj_property name="ObjectShortName">led_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/led_1">
+      <obj_property name="ElementShortName">led_1</obj_property>
+      <obj_property name="ObjectShortName">led_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/led_2">
+      <obj_property name="ElementShortName">led_2</obj_property>
+      <obj_property name="ObjectShortName">led_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/mcu_wakeup">
+      <obj_property name="ElementShortName">mcu_wakeup</obj_property>
+      <obj_property name="ObjectShortName">mcu_wakeup</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/uart_rxd_out">
+      <obj_property name="ElementShortName">uart_rxd_out</obj_property>
+      <obj_property name="ObjectShortName">uart_rxd_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/uart_txd_in">
+      <obj_property name="ElementShortName">uart_txd_in</obj_property>
+      <obj_property name="ObjectShortName">uart_txd_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/jd_6">
+      <obj_property name="ElementShortName">jd_6</obj_property>
+      <obj_property name="ObjectShortName">jd_6</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_a_ready">
+      <obj_property name="ElementShortName">auto_slave_in_a_ready</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_a_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_a_valid">
+      <obj_property name="ElementShortName">auto_slave_in_a_valid</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_a_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_a_bits_opcode">
+      <obj_property name="ElementShortName">auto_slave_in_a_bits_opcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_a_bits_opcode[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_a_bits_size">
+      <obj_property name="ElementShortName">auto_slave_in_a_bits_size[1:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_a_bits_size[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_a_bits_source">
+      <obj_property name="ElementShortName">auto_slave_in_a_bits_source[6:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_a_bits_source[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_a_bits_address">
+      <obj_property name="ElementShortName">auto_slave_in_a_bits_address[27:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_a_bits_address[27:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_a_bits_mask">
+      <obj_property name="ElementShortName">auto_slave_in_a_bits_mask[3:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_a_bits_mask[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_a_bits_data">
+      <obj_property name="ElementShortName">auto_slave_in_a_bits_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_a_bits_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_d_ready">
+      <obj_property name="ElementShortName">auto_slave_in_d_ready</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_d_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_d_valid">
+      <obj_property name="ElementShortName">auto_slave_in_d_valid</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_d_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_d_bits_opcode">
+      <obj_property name="ElementShortName">auto_slave_in_d_bits_opcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_d_bits_opcode[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_d_bits_size">
+      <obj_property name="ElementShortName">auto_slave_in_d_bits_size[1:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_d_bits_size[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_d_bits_source">
+      <obj_property name="ElementShortName">auto_slave_in_d_bits_source[6:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_d_bits_source[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_slave_in_d_bits_data">
+      <obj_property name="ElementShortName">auto_slave_in_d_bits_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_slave_in_d_bits_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_master_out_a_ready">
+      <obj_property name="ElementShortName">auto_master_out_a_ready</obj_property>
+      <obj_property name="ObjectShortName">auto_master_out_a_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_master_out_a_valid">
+      <obj_property name="ElementShortName">auto_master_out_a_valid</obj_property>
+      <obj_property name="ObjectShortName">auto_master_out_a_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_master_out_a_bits_address">
+      <obj_property name="ElementShortName">auto_master_out_a_bits_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_master_out_a_bits_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_master_out_d_ready">
+      <obj_property name="ElementShortName">auto_master_out_d_ready</obj_property>
+      <obj_property name="ObjectShortName">auto_master_out_d_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_master_out_d_valid">
+      <obj_property name="ElementShortName">auto_master_out_d_valid</obj_property>
+      <obj_property name="ObjectShortName">auto_master_out_d_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_master_out_d_bits_opcode">
+      <obj_property name="ElementShortName">auto_master_out_d_bits_opcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_master_out_d_bits_opcode[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_master_out_d_bits_size">
+      <obj_property name="ElementShortName">auto_master_out_d_bits_size[3:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_master_out_d_bits_size[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_master_out_d_bits_data">
+      <obj_property name="ElementShortName">auto_master_out_d_bits_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_master_out_d_bits_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache/auto_master_out_d_bits_corrupt">
+      <obj_property name="ElementShortName">auto_master_out_d_bits_corrupt</obj_property>
+      <obj_property name="ObjectShortName">auto_master_out_d_bits_corrupt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_a_ready">
+      <obj_property name="ElementShortName">icache_auto_slave_in_a_ready</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_a_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_a_valid">
+      <obj_property name="ElementShortName">icache_auto_slave_in_a_valid</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_a_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_a_bits_opcode">
+      <obj_property name="ElementShortName">icache_auto_slave_in_a_bits_opcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_a_bits_opcode[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_a_bits_size">
+      <obj_property name="ElementShortName">icache_auto_slave_in_a_bits_size[1:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_a_bits_size[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_a_bits_source">
+      <obj_property name="ElementShortName">icache_auto_slave_in_a_bits_source[6:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_a_bits_source[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_a_bits_address">
+      <obj_property name="ElementShortName">icache_auto_slave_in_a_bits_address[27:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_a_bits_address[27:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_a_bits_mask">
+      <obj_property name="ElementShortName">icache_auto_slave_in_a_bits_mask[3:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_a_bits_mask[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_a_bits_data">
+      <obj_property name="ElementShortName">icache_auto_slave_in_a_bits_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_a_bits_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_d_ready">
+      <obj_property name="ElementShortName">icache_auto_slave_in_d_ready</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_d_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_d_valid">
+      <obj_property name="ElementShortName">icache_auto_slave_in_d_valid</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_d_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_d_bits_opcode">
+      <obj_property name="ElementShortName">icache_auto_slave_in_d_bits_opcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_d_bits_opcode[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_d_bits_size">
+      <obj_property name="ElementShortName">icache_auto_slave_in_d_bits_size[1:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_d_bits_size[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_d_bits_source">
+      <obj_property name="ElementShortName">icache_auto_slave_in_d_bits_source[6:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_d_bits_source[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_slave_in_d_bits_data">
+      <obj_property name="ElementShortName">icache_auto_slave_in_d_bits_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_slave_in_d_bits_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_master_out_a_ready">
+      <obj_property name="ElementShortName">icache_auto_master_out_a_ready</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_master_out_a_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_master_out_a_valid">
+      <obj_property name="ElementShortName">icache_auto_master_out_a_valid</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_master_out_a_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_master_out_a_bits_address">
+      <obj_property name="ElementShortName">icache_auto_master_out_a_bits_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_master_out_a_bits_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_master_out_d_ready">
+      <obj_property name="ElementShortName">icache_auto_master_out_d_ready</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_master_out_d_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_master_out_d_valid">
+      <obj_property name="ElementShortName">icache_auto_master_out_d_valid</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_master_out_d_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_master_out_d_bits_opcode">
+      <obj_property name="ElementShortName">icache_auto_master_out_d_bits_opcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_master_out_d_bits_opcode[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_master_out_d_bits_size">
+      <obj_property name="ElementShortName">icache_auto_master_out_d_bits_size[3:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_master_out_d_bits_size[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_master_out_d_bits_data">
+      <obj_property name="ElementShortName">icache_auto_master_out_d_bits_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_master_out_d_bits_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/tile/frontend/icache_auto_master_out_d_bits_corrupt">
+      <obj_property name="ElementShortName">icache_auto_master_out_d_bits_corrupt</obj_property>
+      <obj_property name="ObjectShortName">icache_auto_master_out_d_bits_corrupt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/qspi_cs">
+      <obj_property name="ElementShortName">qspi_cs</obj_property>
+      <obj_property name="ObjectShortName">qspi_cs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/qspi_sck">
+      <obj_property name="ElementShortName">qspi_sck</obj_property>
+      <obj_property name="ObjectShortName">qspi_sck</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/qspi_dq_0">
+      <obj_property name="ElementShortName">qspi_dq_0</obj_property>
+      <obj_property name="ObjectShortName">qspi_dq_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/qspi_dq_1">
+      <obj_property name="ElementShortName">qspi_dq_1</obj_property>
+      <obj_property name="ObjectShortName">qspi_dq_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/qspi_dq_2">
+      <obj_property name="ElementShortName">qspi_dq_2</obj_property>
+      <obj_property name="ObjectShortName">qspi_dq_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/qspi_dq_3">
+      <obj_property name="ElementShortName">qspi_dq_3</obj_property>
+      <obj_property name="ObjectShortName">qspi_dq_3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/maskROM/rom/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/maskROM/rom/oe">
+      <obj_property name="ElementShortName">oe</obj_property>
+      <obj_property name="ObjectShortName">oe</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/maskROM/rom/me">
+      <obj_property name="ElementShortName">me</obj_property>
+      <obj_property name="ObjectShortName">me</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/maskROM/rom/address">
+      <obj_property name="ElementShortName">address[10:0]</obj_property>
+      <obj_property name="ObjectShortName">address[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/maskROM/rom/q">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/maskROM/rom/out">
+      <obj_property name="ElementShortName">out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/maskROM/rom/rom">
+      <obj_property name="ElementShortName">rom[0:2047][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rom[0:2047][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_E300HBirdKitFPGAChip/u_E300HBirdKitFPGAChip/E300HBirdKitPlatform/sys/maskROM/rom/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+</wave_config>

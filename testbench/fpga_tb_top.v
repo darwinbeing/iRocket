@@ -24,6 +24,9 @@ module tb_E300HBirdKitFPGAChip();
    wire [31:0] gpio;
    wire        jd_6;
 
+   assign mcu_wakeup = 1;
+   assign jd_6 = 1;
+
    initial begin
       CLK100MHZ <= 0;
       CLK32768KHZ <= 0;
@@ -125,13 +128,13 @@ module tb_E300HBirdKitFPGAChip();
       .jd_6(jd_6)
       );
 
-   // W25Q32JVxxIM u_w25q32jvm(
-   //                          .CSn(qspi_cs),
-   //                          .CLK(qspi_sck),
-   //                          .DIO(qspi_dq[0]),
-   //                          .DO(qspi_dq[1]),
-   //                          .WPn(qspi_dq[2]),
-   //                          .HOLDn(qspi_dq[3]),
-   //                          .RESETn(resetn));
+   W25Q32JVxxIM u_w25q32jvm(
+                            .CSn(qspi_cs),
+                            .CLK(qspi_sck),
+                            .DIO(qspi_dq[0]),
+                            .DO(qspi_dq[1]),
+                            .WPn(qspi_dq[2]),
+                            .HOLDn(qspi_dq[3]),
+                            .RESETn(resetn));
 
 endmodule

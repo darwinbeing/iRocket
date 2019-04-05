@@ -105,8 +105,10 @@ $(prjx): $(verilog)
 prjx: $(prjx)
 
 TB_SRCS = $(base_dir)/testbench/fpga_tb_top.v \
-	  $(base_dir)/testbench/clkdivider.v
-sim: $(romgen)
+	  $(base_dir)/testbench/clkdivider.v \
+	  $(base_dir)/model/W25Q32JV-M/W25Q32JVxxIM.v
+
+sim: $(romgen) $(f)
 	echo $(VSRCS) > $(f)
 	echo $(TB_SRCS) >> $(f)
 
