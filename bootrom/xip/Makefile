@@ -14,7 +14,7 @@ dtb: $(dtb)
 
 elf := $(BUILD_DIR)/xip.elf
 $(elf): xip.S $(dtb)
-	$(CC) $(CFLAGS) -DXIP_TARGET_ADDR=0x20400000 -DDEVICE_TREE='"$(dtb)"' $(LFLAGS) -o $@ $<
+	$(CC) $(CFLAGS) -DXIP_TARGET_ADDR=0x20000000 -DDEVICE_TREE='"$(dtb)"' $(LFLAGS) -o $@ $<
 
 .PHONY: elf
 elf: $(elf)
@@ -42,4 +42,4 @@ romgen: $(romgen)
 
 .PHONY: clean
 clean::
-	rm -rf $(hex) $(elf) 
+	rm -rf $(hex) $(elf)

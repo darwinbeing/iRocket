@@ -24,7 +24,7 @@ class E300HBirdKitFPGAChip(implicit override val p: Parameters) extends HBirdShe
   // DUT
   //-----------------------------------------------------------------------
 
-  withClockAndReset(clock_32MHz, ck_rst) {
+  withClockAndReset(clock_65MHz, ck_rst) {
     val dut = Module(new E300HBirdKitPlatform)
 
     //---------------------------------------------------------------------
@@ -58,7 +58,7 @@ class E300HBirdKitFPGAChip(implicit override val p: Parameters) extends HBirdShe
     PULLUP(jd_6)
 
     // jtag reset
-    val jtag_power_on_reset = PowerOnResetFPGAOnly(clock_32MHz)
+    val jtag_power_on_reset = PowerOnResetFPGAOnly(clock_65MHz)
     dut.io.jtag_reset := jtag_power_on_reset
 
     // debug reset
