@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sifive_freedom_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sifive_freedom" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject type="logic" fp_name="/tb_sifive_freedom/CLK100MHZ">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sifive_freedom/ck_rst">
+      <obj_property name="ElementShortName">ck_rst</obj_property>
+      <obj_property name="ObjectShortName">ck_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sifive_freedom/uart_rxd_out">
+      <obj_property name="ElementShortName">uart_rxd_out</obj_property>
+      <obj_property name="ObjectShortName">uart_rxd_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sifive_freedom/uart_txd_in">
+      <obj_property name="ElementShortName">uart_txd_in</obj_property>
+      <obj_property name="ObjectShortName">uart_txd_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sifive_freedom/qspi_dq_0">
+      <obj_property name="ElementShortName">qspi_dq_0</obj_property>
+      <obj_property name="ObjectShortName">qspi_dq_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sifive_freedom/qspi_dq_1">
+      <obj_property name="ElementShortName">qspi_dq_1</obj_property>
+      <obj_property name="ObjectShortName">qspi_dq_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sifive_freedom/qspi_dq_2">
+      <obj_property name="ElementShortName">qspi_dq_2</obj_property>
+      <obj_property name="ObjectShortName">qspi_dq_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sifive_freedom/qspi_dq_3">
+      <obj_property name="ElementShortName">qspi_dq_3</obj_property>
+      <obj_property name="ObjectShortName">qspi_dq_3</obj_property>
+   </wvobject>
+</wave_config>
