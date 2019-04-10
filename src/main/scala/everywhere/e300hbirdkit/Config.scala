@@ -60,6 +60,13 @@ class WithJtagDTMConfig(idcodeVersion: Int, idcodePartNum: Int, idcodeManufId: I
     debugIdleCycles = debugIdleCycles)
 })
 
+class WithFPU extends Config((site, here, up) => {
+  case RocketTilesKey => up(RocketTilesKey, site) map { r =>
+    r.copy(core = r.core.copy(
+      fpu = Some(FPUParams(fLen = 32))))
+  }
+})
+
 // Default FreedomEConfig
 // class DefaultFreedomEConfig extends Config (
 //   new WithNBreakpoints(2)        ++
@@ -126,6 +133,7 @@ class E300HBirdKitConfig extends Config(
   new WithITIMAddr(0x08000000)  ++
   new WithLocalInterrupts(3)    ++
   new WithPerfCounters(2)       ++
+  new WithFPU                   ++
   new With1TinyCore             ++
   new BaseConfig
 )
