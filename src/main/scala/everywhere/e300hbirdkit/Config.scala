@@ -128,6 +128,8 @@ class E300HBirdKitConfig extends Config(
   new WithNMemoryChannels(0)    ++
   new WithNBanks(0)             ++
   new WithL1ICacheWays(4)       ++
+  new WithL1ICacheSets(256)     ++
+  new WithL1DCacheWays(1)       ++
   new WithL1DCacheSets(1024)    ++
   new WithUserMode              ++
   new WithITIMAddr(0x08000000)  ++
