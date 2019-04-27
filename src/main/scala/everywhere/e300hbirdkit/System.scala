@@ -17,6 +17,9 @@ import sifive.blocks.devices.spi._
 import sifive.blocks.devices.uart._
 import sifive.blocks.devices.i2c._
 
+import sifive.fpgashells.devices.xilinx.xilinxhbirdmig._
+import sifive.fpgashells.shell._
+
 //-------------------------------------------------------------------------
 // E300HBirdKitSystem
 //-------------------------------------------------------------------------
@@ -30,7 +33,8 @@ class E300HBirdKitSystem(implicit p: Parameters) extends RocketSubsystem
     with HasPeripherySPI
     with HasPeripheryGPIO
     with HasPeripheryPWM
-    with HasPeripheryI2C {
+    with HasPeripheryI2C
+    with HasMemoryXilinxHBirdMIG {
   override lazy val module = new E300HBirdKitSystemModule(this)
 }
 
@@ -43,7 +47,8 @@ class E300HBirdKitSystemModule[+L <: E300HBirdKitSystem](_outer: L)
     with HasPeripherySPIFlashModuleImp
     with HasPeripheryMockAONModuleImp
     with HasPeripheryPWMModuleImp
-    with HasPeripheryI2CModuleImp {
+    with HasPeripheryI2CModuleImp
+    with HasMemoryXilinxHBirdMIGModuleImp {
   // Reset vector is set to the location of the mask rom
   val maskROMParams = p(PeripheryMaskROMKey)
   global_reset_vector := maskROMParams(0).address.U
