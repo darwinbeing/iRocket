@@ -2,7 +2,7 @@
 
 CC=$(RISCV)/bin/riscv64-unknown-elf-gcc
 OBJCOPY=$(RISCV)/bin/riscv64-unknown-elf-objcopy
-CFLAGS=-march=rv64imac -mabi=lp64 -O2 -std=gnu11 -Wall -I. -nostartfiles -fno-common -g
+CFLAGS=-march=rv32imac -mabi=ilp32 -O2 -std=gnu11 -Wall -I. -nostartfiles -fno-common -g
 LFLAGS=-static -nostdlib
 
 dtb := $(BUILD_DIR)/$(CONFIG_PROJECT).$(CONFIG).dtb

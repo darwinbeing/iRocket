@@ -5,7 +5,7 @@ import freechips.rocketchip.config._
 import freechips.rocketchip.subsystem._
 import freechips.rocketchip.devices.debug._
 import freechips.rocketchip.devices.tilelink._
-import freechips.rocketchip.diplomacy._
+import freechips.rocketchip.diplomacy.{DTSModel, DTSTimebase}
 import freechips.rocketchip.system._
 import freechips.rocketchip.tile._
 
@@ -15,8 +15,6 @@ import sifive.blocks.devices.pwm._
 import sifive.blocks.devices.spi._
 import sifive.blocks.devices.uart._
 import sifive.blocks.devices.i2c._
-
-import sifive.fpgashells.devices.xilinx.xilinxhbirdmig.{MemoryXilinxDDRKey,XilinxHBirdMIGParams}
 
 class WithITIMAddr(addr: BigInt) extends Config((site, here, up) =>
 {
@@ -71,44 +69,11 @@ class WithFPU extends Config((site, here, up) => {
 
 // Default FreedomEConfig
 // class DefaultFreedomEConfig extends Config (
-//   new WithDTSTimebase(32768)    ++
-//   new WithJtagDTMConfig(
-//       idcodeVersion = 1,
-//       idcodePartNum = 0xe31,
-//       idcodeManufId = 0x536,
-//       debugIdleCycles = 5)      ++
-//   new WithMVendorID(0x536)      ++
-//   new WithNBreakpoints(8)       ++
-//   new WithNExtTopInterrupts(0)  ++
-//   new WithJtagDTM               ++
-//   new WithNMemoryChannels(1)    ++
-//   new WithNBanks(1)             ++
-//   new WithL1ICacheWays(4)       ++
-//   new WithL1ICacheSets(256)     ++
-//   new WithL1DCacheWays(1)       ++
-//   new WithL1DCacheSets(1024)    ++
-//   new WithUserMode              ++
-//   new WithITIMAddr(0x08000000)  ++
-//   new WithLocalInterrupts(3)    ++
-//   new WithPerfCounters(2)       ++
-//   new WithFPU                   ++
-//   new With1TinyCore             ++
-//   new BaseConfig
+//   new WithNBreakpoints(2)        ++
+//   new WithNExtTopInterrupts(0)   ++
+//   new WithJtagDTM                ++
+//   new TinyConfig
 // )
-
-class DefaultFreedomEConfig extends Config (
-  new WithDTSTimebase(32768)    ++
-  new WithJtagDTMConfig(
-      idcodeVersion = 1,
-      idcodePartNum = 0xe31,
-      idcodeManufId = 0x536,
-      debugIdleCycles = 5)      ++
-  new WithMVendorID(0x536)      ++
-  new WithJtagDTM               ++
-  new WithNMemoryChannels(1)    ++
-  new WithNBigCores(1)          ++
-  new BaseConfig
-)
 
 // Freedom E300 HBird Kit Peripherals
 class E300HBirdKitPeripherals extends Config((site, here, up) => {
@@ -140,9 +105,37 @@ class E300HBirdKitPeripherals extends Config((site, here, up) => {
 // Freedom E300 HBird Kit Peripherals
 class E300HBirdKitConfig extends Config(
   new E300HBirdKitPeripherals    ++
-  new DefaultFreedomEConfig().alter((site,here,up) => {
-    case PeripheryBusKey => up(PeripheryBusKey, site).copy(frequency = 50000000) // 50 MHz hperiphery
-    case MemoryXilinxDDRKey => XilinxHBirdMIGParams(address = Seq(AddressSet(0x40000000L,0x10000000L-1))) //256MB
-    // case ExtMem => up(ExtMem).map(_.copy(size = 0x10000000L))
-  })
+  // new DefaultFreedomEConfig().alter((site,here,up) => {
+  //   case DTSTimebase => BigInt(32768)
+  //   case JtagDTMKey => new JtagDTMConfig (
+  //     idcodeVersion = 1,
+  //     idcodePartNum = 0xe31,
+  //     idcodeManufId = 0x536,
+  //     debugIdleCycles = 5)
+  // })
+  new WithDTSTimebase(32768)    ++
+  new WithJtagDTMConfig(
+      idcodeVersion = 1,
+      idcodePartNum = 0xe31,
+      idcodeManufId = 0x536,
+      debugIdleCycles = 5)      ++
+  new WithMVendorID(0x536)      ++
+  new WithNBreakpoints(8)       ++
+  new WithNExtTopInterrupts(0)  ++
+  new WithJtagDTM               ++
+  new WithNoMemPort             ++
+  new WithNoMMIOPort            ++
+  new WithNMemoryChannels(0)    ++
+  new WithNBanks(0)             ++
+  new WithL1ICacheWays(4)       ++
+  new WithL1ICacheSets(256)     ++
+  new WithL1DCacheWays(1)       ++
+  new WithL1DCacheSets(1024)    ++
+  new WithUserMode              ++
+  new WithITIMAddr(0x08000000)  ++
+  new WithLocalInterrupts(3)    ++
+  new WithPerfCounters(2)       ++
+  new WithFPU                   ++
+  new With1TinyCore             ++
+  new BaseConfig
 )
